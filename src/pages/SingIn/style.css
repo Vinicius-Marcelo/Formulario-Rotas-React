@@ -1,0 +1,87 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 494px;
+    height: 475px;
+    background-color: rgba(68, 68, 77, 1);
+    padding: 0 97px;
+    position: relative;
+}
+
+.login img {
+    position: absolute;
+    width: 155px;
+    height: 55px;
+    top: 32px;
+    left: 169px;
+    right: 169px;
+
+}
+
+.logo {
+    margin-bottom: 60px;
+}
+
+.login input {
+    all: unset;
+    width: 300px;
+    height: 55px;
+    color: white;
+    background-color: rgba(46, 46, 54, 1);
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+
+.showpassword {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.showpassword input {
+    padding: 0;
+    margin: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.showpassword input:checked {
+    background-color: rgba(0, 128, 0, 0.5);
+}
+
+.login button {
+    all: unset;
+    width: 312px;
+    height: 55px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(217, 1, 117, 1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: rgba(217, 1, 117, 0.4);
+}
+
+.login .border-radius {
+    border-radius: 5px;
+}
+
+.erro {
+    color: rgba(251, 6, 21, 0.65);
+    margin: 10px 0;
+}

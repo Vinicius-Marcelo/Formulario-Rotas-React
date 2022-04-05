@@ -1,0 +1,69 @@
+.prev-img {
+    position: absolute;
+    top: 38px;
+    left: 48px;
+    cursor: pointer;
+}
+
+.user,
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user {
+    margin-top: 50px;
+    padding: 0 30px;
+    width: 250px;
+    height: 350px;
+    background-color: rgba(218, 1, 117, 1);
+    border-radius: 16px;
+    color: white;
+    font-weight: 400;
+}
+
+.user img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 18px;
+}
+
+.user h1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+    margin-bottom: 8px;
+}
+
+.user span {
+    font-size: 14 px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.bio {
+    border-top: 1px solid rgba(187, 187, 187, 1);
+    padding-top: 8px;
+}
+
+.bio p {
+    font-size: 18px;
+    line-height: 26px;
+    text-decoration: underline;
+    margin-bottom: 16px;
+}
+
+.bio span {
+    font-size: 10px;
+    line-height: 16px;
+    text-align: justify;
+}
+
+.description {
+    max-height: 98px;
+    overflow-y: auto;
+}
