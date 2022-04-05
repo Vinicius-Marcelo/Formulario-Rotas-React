@@ -24,7 +24,7 @@ export default function Main({ setId, setAuthenticatid }) {
               <h1>{dado.name}</h1>
             </div>
           </Link>
-        )};
+        )}
       </div>
     </div>
   );

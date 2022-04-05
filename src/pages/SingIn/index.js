@@ -2,6 +2,8 @@ import './style.css';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Logo from '../../assets/logo.svg';
+import Switch from '@mui/material/Switch';
+const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
 export default function SingIn({ setAuthenticatid }) {
   const navigate = useNavigate();
@@ -22,6 +24,7 @@ export default function SingIn({ setAuthenticatid }) {
   function handleChangerForm(e) {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
+
 
   return (
     <div className="container">
@@ -46,19 +49,20 @@ export default function SingIn({ setAuthenticatid }) {
             onChange={(e) => handleChangerForm(e)} />
 
           <div className='showpassword'>
-            <input type='checkbox'
-              name='show-password'
-              checked={showPassword}
-              onChange={() => setShowPassword(!showPassword)} />
-            <label htmlFor='show-password'>Mostar Senha</label>
+            <label onChange={() => setShowPassword(!showPassword)}>
+              <div className='switch'>
+                <Switch {...label} color="secondary" />
+              </div>
+              <span>Mostar Senha</span>
+            </label>
           </div>
 
           {erro && <strong className='erro'>{erro}</strong>}
           <span>Não tem cadastro?<a href='#'>Clique aqui!</a></span>
           <button className='border-radius'>Login</button>
-        </div>
-      </form>
-    </div>
+        </div >
+      </form >
+    </div >
   );
 }
 
